@@ -1,6 +1,7 @@
 import {createStore} from 'vuex';
 
 // modules
+import profile from './profile.js';
 import games from './games.js';
 
 export default createStore({
@@ -13,6 +14,7 @@ export default createStore({
         }
     },
     modules:{
+        profile:profile,
         games:games
     }
 })

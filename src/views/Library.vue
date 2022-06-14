@@ -1,10 +1,10 @@
 <template>
     <div class="flex flex-col items-center gap-20">
         <!-- User Profile -->
-        <UserProfile/>
+        <UserProfile v-if="$store.state.profile.ready"/>
 
         <!-- Game List -->
-        <GameList/>
+        <GameList v-if="$store.state.games.ready"/>
     </div>
 </template>
 
@@ -22,6 +22,7 @@ export default {
     },
     mounted() {
         this.$store.dispatch("games/fetchGameLibrary");
+        this.$store.dispatch("profile/fetchUserProfile");
     }
 }
 </script>
