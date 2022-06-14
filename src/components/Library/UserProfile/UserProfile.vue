@@ -1,5 +1,5 @@
 <template>
-    <section id="user-profile" class="flex flex-col items-center gap-5">
+    <section id="user-profile" class="flex flex-col items-center gap-5 select-none">
         <!-- avatar -->
         <Avatar/>
         <!-- username -->
