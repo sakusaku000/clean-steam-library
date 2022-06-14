@@ -7,7 +7,7 @@
 
 <script>
 import Logo from './Logo.vue';
-import User from './User.vue';
+import User from './Logout.vue';
 
 export default {
     name:"LayoutTitleBar",
