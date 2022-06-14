@@ -20,6 +20,9 @@ export default {
         Avatar,
         Name,
         StatsList
+    },
+    mounted() {
+        document.title = `${this.$store.state.profile.user.personaname}'s library - Clean Steam Library`;
     }
 }
 </script>
