@@ -1,10 +1,12 @@
 <template>
-    <section id="game-list" class="w-full container mx-auto px-20">
+    <section id="game-list" class="w-full container mx-auto px-20" v-if="$store.state.games.ready">        
         <h1 class="font-bold text-xl mb-2">Library</h1>
-        <Game id="1" 
-        name="Beat Saber" 
-        :icon="`http://media.steampowered.com/steamcommunity/public/images/apps/620980/d2922f271fca9579ecdcc07408cee13d87ca4148.jpg`"
-        :playTime="2345"
+        <Game v-for="game in $store.state.games.library"
+        :key="game.appid"
+        :id="game.appid" 
+        :name="game.name" 
+        :icon="game.img_icon_url"
+        :playTime="game.playtime_forever"
         />
     </section>
 </template>

@@ -1,7 +1,7 @@
 <template>
     <router-link :to="`/game/${id}`" id="game" class="p-3 flex items-center gap-5 select-none hover:bg-slate-800 rounded-xl duration-200 group">
         <!-- game icon -->
-        <img id="game-icon" class="rounded-lg w-10" :src="icon" :alt="`${name} game icon`">
+        <img id="game-icon" class="rounded-lg w-10" :src="(icon) ? `http://media.steampowered.com/steamcommunity/public/images/apps/${id}/${icon}.jpg` : '/img/default.jpg'" :alt="`${name} game icon`">
 
         <!-- game name & hours -->
         <div id="game-name">
@@ -25,7 +25,7 @@ export default {
         InfoIcon
     },
     props:{
-        id:String,
+        id:Number,
         name:String,
         icon:String,
         playTime:Number

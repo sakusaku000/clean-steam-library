@@ -1,6 +1,6 @@
 <template>
     <div id="user-stats" class="flex items-center gap-5">
-        <Stat name="games" count="50"/>
+        <Stat name="games" :count="$store.state.games.library.length"/>
     </div>
 </template>
 

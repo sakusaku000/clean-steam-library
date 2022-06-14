@@ -19,6 +19,9 @@ export default {
     components:{
         UserProfile,
         GameList
+    },
+    mounted() {
+        this.$store.dispatch("games/fetchGameLibrary");
     }
 }
 </script>
