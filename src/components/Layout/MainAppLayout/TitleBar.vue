@@ -1,5 +1,5 @@
 <template>
-    <div class="flex items-center justify-between px-14 pt-14">
+    <div class="flex items-center justify-between px-14 pt-14 select-none">
         <Logo/>
         <User/>
     </div>
