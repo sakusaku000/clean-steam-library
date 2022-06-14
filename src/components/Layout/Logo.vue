@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Steam from '../../Icons/SteamMain.vue';
-import Back from '../../Icons/Back.vue';
+import Steam from '../Icons/SteamMain.vue';
+import Back from '../Icons/Back.vue';
 export default {
     name:"TitleBarLogo",
     components:{
