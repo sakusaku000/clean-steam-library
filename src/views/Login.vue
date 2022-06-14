@@ -1,5 +1,5 @@
 <template>
-    <div class="flex flex-col justify-center items-center gap-20 h-screen -m-14">
+    <div class="flex flex-col justify-center items-center gap-10 h-screen -m-14">
         <!-- logo -->
         <LoginLogo/>
         <!-- enter username dialog -->

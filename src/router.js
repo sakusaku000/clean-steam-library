@@ -27,6 +27,9 @@ router.beforeEach((to, from) => {
     if (!localStorage.getItem("id") && to.name !== "Login") {
         return {name:"Login"}
     }
+    else if (localStorage.getItem("id") && to.name === "Login") {
+        return {name:"Library"}
+    }
 });
 
 
