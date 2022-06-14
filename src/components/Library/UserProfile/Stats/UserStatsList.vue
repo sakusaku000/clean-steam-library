@@ -1,5 +1,5 @@
 <template>
-    <div id="user-stats" class="flex items-center gap-3">
+    <div id="user-stats" class="flex items-center gap-5">
         <Stat name="games" count="50"/>
     </div>
 </template>
