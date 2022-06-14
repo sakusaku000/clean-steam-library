@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import Steam from '../Icons/SteamMain.vue';
+import Steam from '../../Icons/SteamMain.vue';
 export default {
     name:"TitleBarLogo",
     components:{

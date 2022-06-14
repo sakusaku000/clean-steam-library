@@ -9,7 +9,7 @@
 </template>
 
 <script>
-import TitleBar from './TitleBar.vue';
+import TitleBar from '../MainAppLayout/TitleBar.vue';
 
 export default {
     name:"AppLayout",
